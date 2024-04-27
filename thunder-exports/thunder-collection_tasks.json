@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "tasks",
+    "dateExported": "2024-04-27T12:24:06.001Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4aa878c7-d29e-45a5-b4cc-86b5fb5b97f4",
+            "colId": "494dc736-e0b0-4673-9888-e7baf7982c88",
+            "containerId": "",
+            "name": "/tasks",
+            "url": "localhost:4000/tasks",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-27T10:42:55.519Z",
+            "modified": "2024-04-27T10:43:08.065Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "57b7108a-e033-4b82-a195-6f1225fbe204",
+            "colId": "494dc736-e0b0-4673-9888-e7baf7982c88",
+            "containerId": "",
+            "name": "/tasks/:id",
+            "url": "localhost:4000/tasks/428983eb-2eaf-4b6c-9d09-f5173a49f064",
+            "method": "GET",
+            "sortNum": 12500,
+            "created": "2024-04-27T10:43:18.642Z",
+            "modified": "2024-04-27T11:02:47.067Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4ce80fb8-5296-4640-a741-f48cbefa8aaf",
+            "colId": "494dc736-e0b0-4673-9888-e7baf7982c88",
+            "containerId": "",
+            "name": "/tasks",
+            "url": "localhost:4000/tasks",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-04-27T10:44:08.326Z",
+            "modified": "2024-04-27T12:21:22.787Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Comprar manzanas rojas\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9f13e06c-f8c4-46f4-acd7-4948a5bb4489",
+            "colId": "494dc736-e0b0-4673-9888-e7baf7982c88",
+            "containerId": "",
+            "name": "/tasks/:id",
+            "url": "localhost:4000/tasks/8982d98e-4581-4822-9d0e-a481956074ff",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2024-04-27T10:45:11.945Z",
+            "modified": "2024-04-27T12:21:37.105Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Comprar manzanas (updated)\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "db95518d-5ea9-47f0-a3c1-94865a6ca3da",
+            "colId": "494dc736-e0b0-4673-9888-e7baf7982c88",
+            "containerId": "",
+            "name": "/tasks/:id",
+            "url": "localhost:4000/tasks/8982d98e-4581-4822-9d0e",
+            "method": "DELETE",
+            "sortNum": 35000,
+            "created": "2024-04-27T10:45:26.576Z",
+            "modified": "2024-04-27T12:21:54.168Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,28 +1,24 @@
 const express = require('express')
+const morgan = require('morgan')
 
-console.log(express)
+const tasksRouter = require('./routes/tasks.js')
 
-// const http = require('http')
+const app = express()
 
-// const server = http.createServer((req, res) => {
-// 	console.log(req.url)
+app.use(morgan('dev'))
+app.use(express.json())
 
-// 	if (req.url === '/') {
-// 		res.statusCode = 200
-// 		res.setHeader('Content-Type', 'text/html')
+app.use('/tasks', tasksRouter)
 
-// 		res.end('<h1>HOME</h1>')
-// 	} else if (req.url === '/data') {
-// 		res.statusCode = 200
-// 		res.setHeader('Content-Type', 'application/json')
+/* Diseño de la api
+label recurso: tasks
 
-// 		res.end('{"message": "hello world"}')
-// 	} else {
-// 		res.statusCode = 404
-// 		res.setHeader('Content-Type', 'text/html; charset=utf-8')
+GET  /tasks
+GET  /tasks/:id
+POST /tasks {PAYLOAD BODY (new)}
+PUT  /tasks/:id {PAYLOAD BODY (updates)}
+DELETE /tasks/:id
 
-// 		res.end('<h1>404: La página no existe.</h1>')
-// 	}
-// })
+*/
 
-// server.listen(4000, () => console.log('server on...'))
+app.listen(4000, () => console.log('server on...'))
